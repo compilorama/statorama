@@ -35,7 +35,7 @@ jobs:
             - "jest.*.js"
             - "webpack.*.js"
             - ".babelrc"
-            - ".eslintrc"
+            - ".eslintrc.json"
             - "node_modules"
             - ".git/*"
             - ".circleci/*"
