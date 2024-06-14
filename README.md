@@ -2,8 +2,8 @@
 
 > Analytics wrapper for Umami
 
-[![CircleCI](https://circleci.com/gh/compilorama/statorama/tree/master.svg?style=svg)](https://circleci.com/gh/compilorama/statorama/tree/master)
-[![Coverage Status](https://coveralls.io/repos/github/compilorama/statorama/badge.svg?branch=master)](https://coveralls.io/github/compilorama/statorama?branch=master)
+[![CircleCI](https://circleci.com/gh/compilorama/statorama/tree/main.svg?style=svg)](https://circleci.com/gh/compilorama/statorama/tree/main)
+[![Coverage Status](https://coveralls.io/repos/github/compilorama/statorama/badge.svg?branch=main)](https://coveralls.io/github/compilorama/statorama?branch=main)
 
 ## Installation
 
