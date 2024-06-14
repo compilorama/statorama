@@ -1,0 +1,45 @@
+{
+  "name": "@compilorama/statorama",
+  "version": "0.0.0",
+  "description": "Analytics wrapper for Umami",
+  "main": "dist/statorama.js",
+  "files": [
+    "dist/**/*.*"
+  ],
+  "scripts": {
+    "build": "webpack",
+    "format": "eslint 'src/**/*.js'",
+    "test": "jest",
+    "prepublishOnly": "rm -rf ./dist && NODE_ENV=production npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/compilorama/statorama.git"
+  },
+  "keywords": [
+    "analytics",
+    "umami",
+    "wrapper"
+  ],
+  "author": "Rafael Camargo <hello@rafaelcamargo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/compilorama/statorama/issues"
+  },
+  "homepage": "https://github.com/compilorama/statorama#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel-jest": "^27.0.6",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.32.0",
+    "jest": "^27.0.6",
+    "terser-webpack-plugin": "^5.1.4",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "isbot": "^5.1.9"
+  }
+}
