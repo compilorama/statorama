@@ -1,6 +1,6 @@
 {
   "name": "@compilorama/statorama",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Analytics wrapper for Umami",
   "main": "dist/statorama.js",
   "files": [
