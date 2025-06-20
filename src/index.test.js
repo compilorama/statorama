@@ -51,4 +51,11 @@ describe('Statorama', () => {
     expect(tag.getAttribute('data-website-id')).toEqual('123');
     expect(tag.getAttribute('src')).toEqual('/stats.js');
   });
+
+  it('should track events', () => {
+    const track = { name: 'Some event', data: { some: 'data' } };
+    window.umami = { track: jest.fn() };
+    statorama.track(track.name, track.data);
+    expect(window.umami.track).toHaveBeenCalledWith(track.name, track.data);
+  });
 });

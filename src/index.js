@@ -11,6 +11,10 @@ _public.init = ({ src, id, enabled }) => {
   }
 };
 
+_public.track = (eventName, eventData) => {
+  window.umami && window.umami.track && window.umami.track(eventName, eventData);
+};
+
 function statsEnabled(enabled){
   const params = new URLSearchParams(window.location.search);
   if(
