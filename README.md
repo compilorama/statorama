@@ -18,6 +18,10 @@ Analytics wrapper that adds a couple of functionalities on top of Umami SDK:
 - Diasables tracking when a local storage item with key/value `analytics=disabled` is found.
 - Disables tracking when user agent is considered a bot.
 
+### Initializating
+
+By initializing the lib, page view will be tracked automatically
+
 ``` javascript
 import statorama from '@compilorama/statorama';
 
@@ -29,6 +33,17 @@ statorama.init({
   // Enable/Diasable tracking arbitrarily (required)
   enabled: Boolean,
 })
+```
+
+### Tracking Custom Events
+
+``` javascript
+import statorama from '@compilorama/statorama';
+
+statorama.track(
+  String, // Event Name (Ex.: 'Button Clicked')
+  Object  // Event Data (Ex.: { name: 'Subscribe' })
+)
 ```
 
 ## Contributing
